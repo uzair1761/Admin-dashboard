@@ -1,0 +1,36 @@
+.Datatables{
+    box-shadow: 10px 10px 5px -2px rgba(115,91,91,0.99);
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(115,91,91,0.99);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(115,91,91,0.99);
+    height:400px;
+    width: 100%;
+    .cellWithImg{
+        display: flex;
+        align-items: center;
+        
+        .cellImg{
+            height: 32px;
+            width: 32px;
+            border-radius:50% ;
+            padding: 20px;
+        }
+    }
+    .cellWithStatus{
+        padding: 5px;
+        border-radius:5px;
+        &.active{
+            color:green;
+            background-color:rgba($color: #b4e7cf, $alpha: 1.0)
+        }
+        &.pending{
+            color:red;
+            background-color:rgba($color: #edb7a8, $alpha: 1.0)
+        }
+        &.passive{
+            color:yellow;
+            background-color:rgba($color: #f0f1de, $alpha: 1.0)
+        }
+
+    }
+   
+}

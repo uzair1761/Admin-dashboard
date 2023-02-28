@@ -1,0 +1,58 @@
+.Wigets{
+    display: flex;
+    flex:1;
+    padding: 10px;
+    justify-content: space-between;
+ box-shadow: 7px -2px 32px -6px rgba(212,124,15,0.89);
+-webkit-box-shadow: 7px -2px 32px -6px rgba(212,124,15,0.89);
+-moz-box-shadow: 7px -2px 32px -6px rgba(212,124,15,0.89);
+.left{
+display: flex;
+    flex-direction: column;
+    
+    .title{
+        font-weight: bold;
+        font-size:14px;
+        color:rgba($color: #5f6b95, $alpha: 1.0)
+
+    }
+    .counter{
+        font-size: 28px;
+       
+        font-weight: 300;
+    }
+    .link{
+        font-size: 12px;
+        border-bottom: 1px solid grey;
+        width:max-content
+
+    }
+}
+.right{
+
+    display: flex;
+    flex-direction: column;
+    .icon{
+        position: relative;
+        bottom:-20px
+    }
+    .percentage{
+        display: flex;
+        align-items: center;
+        &.negative{
+            color:red
+        }
+        &.positive{
+            color:green
+    
+        }
+    }
+    .icon{
+        font-size: 18px;
+        background-color: rgba($color: #526171, $alpha: 1.0);
+        border-radius: 20px;
+        align-self: flex-end;
+        padding: 5px;
+    }
+}
+}
